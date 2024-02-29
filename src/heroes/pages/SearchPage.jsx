@@ -40,13 +40,13 @@ export const SearchPage = () => {
             <h2> Results:</h2>
             {
                 q == '' && (
-                <div className="alert alert-warning animate__animated animate__fadeIn">
+                <div aria-label="alertWarning" className="alert alert-warning animate__animated animate__fadeIn">
                     Please enter a name to search a hero <b>{q}</b>
                 </div>)
             }
                         {
                 q !== '' && !heroes.length && (
-                <div className="alert alert-danger animate__animated animate__fadeIn">
+                <div aria-label="alertDanger" className="alert alert-danger animate__animated animate__fadeIn">
                     No records found with name: <b>{q}</b>
                 </div>)
             }

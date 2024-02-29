@@ -22,7 +22,7 @@ export const HeroCard = ({ hero }) => {
         <div className="hero-card animate__animated animate__fadeIn">
             <div className='main'>
                 <img className='tokenImage animate__animated animate_bounce' src={heroImageUrl} alt={id} />
-                <h2> {superhero}</h2>
+                <h2 aria-label="heroName"> {superhero}</h2>
                 <p className='description'>
                     <CharactersByHero alter_ego={alter_ego} characters={characters} />
                     <span className="fw-bold"> FA: </span>
